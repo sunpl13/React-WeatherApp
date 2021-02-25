@@ -1,0 +1,26 @@
+.forecast-container {
+  display: flex;
+  .forecast-component {
+    width: 80px;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    .t_mark {
+      font-size: 0.3rem;
+      vertical-align: 0.7rem;
+    }
+  }
+  @media (max-width: 1000px) {
+    .f-time {
+      font-size: 0.8rem;
+    }
+    .forecast-component {
+      width: 60px;
+      .t_mark {
+        font-size: 0.2rem;
+        vertical-align: 0.6rem;
+      }
+    }
+    overflow: scroll;
+  }
+}

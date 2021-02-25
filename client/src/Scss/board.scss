@@ -1,0 +1,55 @@
+.board-wrapper {
+  position: fixed;
+  width: 40%;
+  height: 60%;
+  background: #f1f0f0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  transition: all 1s ease;
+
+  .input_wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+
+    .title_input {
+      width: 500px;
+      height: 40px;
+      margin: 10px 0 10px 0;
+    }
+    .ck.ck-editor {
+      min-width: 500px;
+    }
+    .ck.ck-editor__editable:not(.ck-editor__nested-editable) {
+      min-height: 300px;
+    }
+
+    .btn-loaction {
+      text-align: center;
+      margin-top: 10px;
+      .submit {
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        border: none;
+        background: indianred;
+        border-radius: 5px;
+        margin-bottom: 30px;
+      }
+      .cancle {
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        border: none;
+        background: #44a5c2;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        margin-left: 15px;
+      }
+    }
+  }
+}

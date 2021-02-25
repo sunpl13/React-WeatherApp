@@ -1,0 +1,86 @@
+$gray: #bdbdbd;
+
+.Calendar {
+  font-size: 1.5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .control {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .month {
+      margin: 0 20px 0 20px;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      font-weight: 500;
+      font-size: 1.5rem;
+    }
+    .arrow {
+      font-size: 2rem;
+    }
+    .btn {
+      margin-left: 35%;
+      margin-bottom: 5px;
+      font-size: 1.8rem;
+    }
+  }
+  table {
+    display: flex;
+    width: 50vw;
+  }
+  table tbody {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  tr {
+    display: flex;
+    flex-direction: row;
+  }
+
+  td {
+    display: flex;
+    border: 1px solid gray;
+    width: 5vw;
+    height: 5vh;
+  }
+  td:hover {
+    background-color: silver;
+  }
+  td span {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .inactive {
+    border-color: none;
+  }
+  .active {
+    border-color: aqua;
+  }
+
+  .cal-list {
+    min-width: 30%;
+    min-height: 30%;
+    max-width: 50%;
+    max-height: 80%;
+    background: $gray;
+    margin-top: 5%;
+    border: 1px solid $gray;
+    border-radius: 6px;
+  }
+
+  .back-drop {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background: #c0c0c0;
+  }
+}
